@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.kna</groupId>
-    <artifactId>msgRabbitMQ</artifactId>
+    <artifactId>msg-rabbitmq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>msgRabbitMQ</name>
     <description>msgRabbitMQ</description>
