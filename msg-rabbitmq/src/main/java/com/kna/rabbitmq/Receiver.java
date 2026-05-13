@@ -11,7 +11,7 @@ public class Receiver {
     private CountDownLatch latch = new CountDownLatch(1);
 
     public void receiveMessage (String message){
-        System.out.println("Recived : " + message);
+        System.out.println("Recive  d : " + message);
 
     }
 
