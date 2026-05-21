@@ -7,7 +7,7 @@ This repository is a set of small Spring Boot lab projects based on Spring guide
 - A JDK that matches the lab `pom.xml`.
   - Java 17: `restful-webservice`, `spring-rest-service`, `msg-rabbitmq`, `msg-redis`, `upload-file`
   - Java 21: `soap-spring`
-  - Java 25: `caching-data`, `dependency-injection`, `gateway`, `graphql-spring`, `ldap-spring`, `neo4j`
+  - Java 25: `async-method`, `caching-data`, `dependency-injection`, `gateway`, `graphql-spring`, `ldap-spring`, `neo4j`
 - Docker Desktop or another Docker environment for the Redis and RabbitMQ messaging labs.
 - A local Neo4j instance for the Neo4j lab. The app expects `bolt://localhost:7687`, username `neo4j`, and password `password`.
 
@@ -22,12 +22,12 @@ This repository is a set of small Spring Boot lab projects based on Spring guide
 | `soap-spring` | SOAP web service | [Producing a SOAP web service](https://spring.io/guides/gs/producing-web-service/) | 21 | WSDL is available at `/services/countries.wsdl`. |
 | `ldap-spring` | LDAP authentication | [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/) | 25 | Uses embedded LDAP data from `schema.ldif`; login user `ben`, password `benspassword`. |
 | `caching-data` | Spring cache abstraction | [Caching Data with Spring](https://spring.io/guides/gs/caching/) | 25 | Command-line demo showing repeated ISBN lookups. |
+| `async-method` | Asynchronous method execution | [Creating Asynchronous Methods](https://spring.io/guides/gs/async-method/) | 25 | Uses `@Async` and `RestClient` to fetch GitHub users concurrently. |
 | `msg-redis` | Redis publish/subscribe messaging | [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/) | 17 | Uses `compose.yml` and Spring Boot Docker Compose support for Redis. |
 | `msg-rabbitmq` | RabbitMQ messaging | [Messaging with RabbitMQ](https://spring.io/guides/gs/messaging-rabbitmq/) | 17 | Uses `compose.yml` and Spring Boot Docker Compose support for RabbitMQ. |
 | `gateway` | Spring Cloud Gateway | [Building a Gateway](https://spring.io/guides/gs/gateway/) | 25 | Routes `/get` to `http://httpbin.org` and includes a `/fallback` route. |
 | `neo4j` | Spring Data Neo4j | [Accessing Data with Neo4j](https://spring.io/guides/gs/accessing-data-neo4j/) | 25 | Requires a running Neo4j database with the credentials above. |
 | `dependency-injection` | Dependency injection patterns | [Spring Beans and Dependency Injection](https://docs.spring.io/spring-boot/reference/using/spring-beans-and-dependency-injection.html) | 25 | Console demo for constructor, setter, and interface-style injection. |
-| `azure` | Generated Azure project output | n/a | n/a | This folder currently contains `HELP.md`, IDE files, and build output only. It has no `pom.xml` or source tree checked in. |
 
 ## Running a Lab
 
